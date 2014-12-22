@@ -1,4 +1,3 @@
-================
 buildout.minimal
 ================
 
@@ -7,13 +6,18 @@ buildout.minimal
 Minimal Plone Buildout
 
 Features
-========
+--------
 
 
 Installation
-============
+------------
+
+
+Contribute
+----------
+
 
 License
 -------
 
-GPLv2
+[GPLv2] (https://www.gnu.org/licenses/gpl-2.0.html)
