@@ -13,7 +13,7 @@ This is a minimal buildout for [Plone](https://plone.com). Setuptools is pinned 
 Installation
 ------------
 
-Install/Setup it like that::
+Install/Setup it::
 
     git clone https://github.com/leftxs/buildout.minimal.git
 
@@ -21,9 +21,26 @@ Run Makefile::
 
     make build
 
+If you do not like Makefiles::
+
+    virtualenv --python=python2.7 --no-setuptools --clear .
+
+    wget http://downloads.buildout.org/2/bootstrap.py
+
+    python bootstrap.py --setuptools-version=7.0 --version=2.2.5
+
+    source bin/activate && ./bin/buildout
+
+This will:
+
+- create a virtualenv with python 2.7 with no setuptools
+- download a up to date bootstrap.py
+- bootstrap your virtualenv with setuptools version 7 and buildout version 2.2.5
+- activate the virtualenv and run buildout
 
 Contribute
 ----------
+
 
 
 License
