@@ -7,7 +7,7 @@ OK_COLOR    = \x1b[32;01m
 
 build:
 	@echo -e "${OK_COLOR}>>> Creating virtuelenv...${NO_COLOR}"
-	virtualenv --python=python2.7 --no-setuptools --clear .
+	virtualenv --python=python2.7 --no-setuptools --clear $(VENV)
 
 	@echo -e "${OK_COLOR}>>> Downloading bootstrap file...${NO_COLOR}"
 	wget http://downloads.buildout.org/2/bootstrap.py
